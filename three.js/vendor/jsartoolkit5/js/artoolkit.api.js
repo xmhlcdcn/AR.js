@@ -1105,7 +1105,7 @@
 		@return {VideoElement} Returns the created video element.
 	*/
 	ARController.getUserMedia = function(configuration) {
-		var facing = configuration.facingMode || 'environment';
+		var facing = 'environment';
 
 		var onSuccess = configuration.onSuccess;
 		var onError = configuration.onError || function(err) { console.error("ARController.getUserMedia", err); };
